@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet-Connect</title>
+    <link rel="stylesheet" href="pet.css">
+</head>
+<body>
+
+<div class="navbar">
+        <a href="#home">Pet<span>-Connect</span></a>
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+          </div>
+        <div class="nav-icons">
+         <a href="#about-us">About-us</a>
+         <a href="#AdoptionSection">Adpot</a>
+         <a href="#volunteers">Volunteers</a>
+         <a href="#contactus">Contact us</a>
+         </div> 
+        
+</div>
+<header class="header">
+        <h1>Welcome to Pet<span>-Connect</span></h1>
+        <p>Here, you can find your lovely pet's and also help them </p>
+        <button onclick="openDonationForm()">Donate Now</button>
+        <div id="overlay" class="overlay"></div>
+
+        <div id="donationForm">
+            <h2>Donation Form!</h2>
+            <form onsubmit="event.preventDefault(); submitDonationForm();">
+                
+                <label for="name">Name:</label>
+                <input type="text" id="amount" name="amount" placeholder="Krishna Yadav" required>
+        
+                <label for="number">Mobile number:</label>
+                <input type="text" id="name" name="name" placeholder="6204395289" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="xyz@gmail.com" required>
+
+                <label for="amount">Amount:</label>
+                <input type="text" id="amount" name="amount" placeholder="eg. 100,200,300,400,500" required>
+        
+                <button type="submit" value="Submit" class="submit" >Submit</button>
+                <button onclick="closeDonationForm()" class="close" >Close</button>
+            </form>
+        </div>
+        
+        <div id="thanksMessage">
+            <h2>Thanks for your donation!</h2>
+            <p>We appreciate your support.</p>
+        </div>
+</header>
+
+  <div class="details">
+    <img src="istockphoto-837572972-612x612.jpg" width="700" height="450" alt="">
+    <iframe width="700" height="450" src="https://www.youtube.com/embed/IaRYTu_F1OE?si=uAkeihJHs29oukRY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<hr>
+<div class="adopt">
+    <h1>Adopt Now !</h1>
+    <p>"Adopt, Don't Shop: Changing Lives One Paw at a Time."</p>
+    <button onclick="openadoptionForm()" >ADOPT</button> <hr>
+    <img src="img1.webp" height="350px"  alt="1">
+    <img src="img2.jpg" height="350px"  alt="2">
+    <img src="img3.jpg" height="350px"  alt="3">
+    <img src="img4.jpg" alt="4">
+    <img src="img5.jpg" alt="5">
+    <img src="img6.jpg" alt="6">
+</div>  <hr>
+
+<div class="about-us">
+        <section>
+            <h1>About Us</h1>
+            <p>*Welcome to the Pet Adoption center, where we believe in finding loving homes for every pet in need. Our mission is to connect wonderful animals with caring individuals and families, creating lasting bonds that bring joy and fulfillment to both pets and their new owners.</p>
+        
+            <p>*At the heart of our organization is a commitment to the well-being of animals. We strive to provide a safe and comfortable environment for pets awaiting adoption, ensuring they receive the love and care they deserve during their stay with us.</p>
+        
+            <p>*Our dedicated team of animal lovers is here to guide you through the adoption process, answer your questions, and offer support as you welcome a new furry friend into your life. Together, we can make a positive impact on the lives of animals and create a community that values compassion and responsible pet ownership.</p>
+          </section>
+</div>   <hr>
+
+<div id="volunteer">
+<h2>Meet Our Volunteers</h2>
+
+<div class="volunteer-card">
+    <div class="volunteer">
+        <img src="WhatsApp Image 2023-10-30 at 10.23.28_520dfb4e.jpg" height="150px" alt="Volunteer 1">
+        <h3>Krishna Yadav</h3>
+        <p>Volunteering since 2018. Passionate about animal welfare and finding loving homes for pets.</p>
+    </div>
+
+    <div class="volunteer">
+        <img src="" height="150px" alt="Volunteer 2">
+        <h3>Agriya Verma</h3>
+        <p>Animal lover with a background in pet care. Enjoys spending time with dogs and cats.</p>
+    </div>
+
+    <div class="volunteer">
+        <img src="" height="150px alt="Volunteer2">
+        <h3>Adwaith Asokan</h3>
+        <p>Animal lover with a background in pet care. Enjoys spending time with dogs and cats.</p>
+    </div>
+   </div>
+</div>
+  <hr>
+
+  <div class="article">
+    <h1>Article</h1>
+  </div>
+
+<div class="container">
+        <form id="contactForm" action="#" method="post">
+            <h2>Contact Us</h2>
+    
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+    
+            <input type="submit" value="Submit">
+        </form>
+    
+        <div id="thanksMessage" style="display: none;">
+            <h2>Thanks for contacting us!</h2>
+            <p>We'll get back to you as soon as possible.</p>
+        </div>
+</div>
+<hr>
+    
+<footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>"Connecting hearts: Where pets find a home and love knows no bounds."</p>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p>Email: ky62045@gmail.com</p>
+                <p>Phone: 6204395289</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/adopt">Adopt a Pet</a></li>
+                    <li><a href="/volunteer">Volunteer</a></li>
+                    <li><a href="/donate">Donate</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2023 Your Pet Adoption Organization. All rights reserved. designed and made by Krishna Yadav 
+        </div>
+</footer>
+
+<script src="pet.js" ></script>
+</body>
+</html>
